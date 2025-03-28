@@ -20,7 +20,7 @@ const Header: React.FC<IheaderProp> = ({ openMenu, closeMenu, isOpen }) => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <h1>Logo</h1>
+        <h1>logo</h1>
       </div>
       <nav className={styles.nav}>
         <nav className={styles.navList}>

@@ -39,64 +39,65 @@
 }
 
 .content {
-  max-width: 850px;
-  margin-bottom: 4rem;
+  max-width: 900px;
+  margin-bottom: 3rem;
   z-index: 1;
   animation: fadeIn 1s ease-in-out;
+  text-align: center;
 }
 
 .title {
-  font-size: 4.5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-bottom: 1.5rem;
-  color: #ffae00;
-  text-transform: uppercase;
-  text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.6);
-  line-height: 1.1;
-  font-family: 'Poppins', sans-serif;
-  transition: transform 0.3s ease;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+  color: #ffaa33;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .title:hover {
-  transform: scale(1.05); /* Эффект увеличения заголовка */
+  transform: scale(1.03);
+  color: #ff8800;
 }
 
 .subtitle {
-  font-size: 2rem;
-  font-weight: 400;
-  opacity: 0.9;
-  margin-bottom: 1.8rem;
-  color: #e0e0e0;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+  color: #dcdcdc;
+  font-family: 'Roboto', sans-serif;
 }
 
-
 .listenButton {
-  background: #ffae00;
-  color: #121212;
+  background: #ffaa33;
+  color: #222;
   border: none;
-  padding: 1.2rem 3.5rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  border-radius: 50px;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 40px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .listenButton:hover {
-  background: #ff6600;
-  transform: scale(1.1);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  background: #ff7700;
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .listenButton:active {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Анимация для плавного появления контента */
