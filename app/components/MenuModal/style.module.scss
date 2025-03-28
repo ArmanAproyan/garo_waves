@@ -1,0 +1,93 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0; /* Начальная прозрачность 0 */
+    visibility: hidden; /* Начальная невидимость */
+    transition: opacity 0.3s ease, visibility 0s 0.3s; /* Плавная анимация изменения прозрачности */
+  }
+  
+  .container_active {
+    opacity: 1; /* Делаем контейнер видимым */
+    visibility: visible; /* Делаем контейнер видимым */
+    transition: opacity 0.3s ease, visibility 0s 0s; /* Плавная анимация появления */
+  }
+  
+  .modal {
+    width: 400px;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  .modal.active {
+    transform: translateX(0);
+  }
+  
+  .navList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navLinks:hover {
+    color: #ffae00;
+    transform: scale(1.05);
+  }
+  
+  .navLinks::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffae00;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .navLinks:hover::after {
+    transform: scaleX(1);
+  }
+  
+  @media (max-width: 768px) {
+    .modal {
+      max-height: 100vh;
+      padding: 1.5rem;
+    }
+  
+    .navLinks {
+      font-size: 2rem;
+    }
+  }
+  

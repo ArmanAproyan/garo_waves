@@ -1,0 +1,64 @@
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  background: #1a1a1a; /* Немного мягче черного для современного вида */
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.textContent {
+  margin-bottom: 3rem;
+  max-width: 900px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffcc00; /* Более теплый оттенок жёлтого для лучшего контраста */
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: #e0e0e0; /* Чуть более светлый цвет текста для лучшего контраста */
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Меньше закругления для более строгого дизайна */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}

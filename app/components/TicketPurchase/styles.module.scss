@@ -1,0 +1,77 @@
+.ticketSection {
+    padding: 3rem 2rem;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  
+  .ticketSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .quantityButton {
+    background-color: #ffae00;
+    color: #121212;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .quantityButton:hover {
+    background-color: #ff6600;
+  }
+  
+  .quantity {
+    font-size: 2rem;
+    margin: 0 1rem;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .amount, .total {
+    font-weight: bold;
+    color: #ffae00;
+  }
+  
+  .purchaseButton {
+    background-color: #ffae00;
+    color: #121212;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .purchaseButton:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+  }
+  
