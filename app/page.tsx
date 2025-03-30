@@ -28,7 +28,7 @@ const Home = () => {
       <Header openMenu={handleOpenMenue} closeMenu={handleCloseMenu} isOpen={openMenu}/>
       <Main />
       <About />
-      <Gallery/>
+      {/* <Gallery/> */}
       <TicketPurchase />
       <MusicLinks />
       <ClientMusic />
