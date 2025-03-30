@@ -55,6 +55,7 @@
   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   line-height: 1.2;
   transition: transform 0.3s ease, color 0.3s ease;
+  font-family: system-ui;
 }
 
 .title:hover {
@@ -146,7 +147,8 @@
     padding: 5rem 1.5rem;
   }
   .title {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    color: #e5d2c1;
   }
   .subtitle {
     font-size: 1.3rem;
