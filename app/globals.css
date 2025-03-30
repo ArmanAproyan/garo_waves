@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Alegreya", serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+}

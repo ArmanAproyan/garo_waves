@@ -8,6 +8,7 @@ import ClientMusic from './components/ClientMusic'
 import MusicLinks from './components/MusicList/MusicLists'
 import Footer from './components/Footer'
 import MenuModale from './components/MenuModal'
+import Gallery from './components/Gallery'
 import { useState } from 'react'
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
       <Header openMenu={handleOpenMenue} closeMenu={handleCloseMenu} isOpen={openMenu}/>
       <Main />
       <About />
+      <Gallery/>
       <TicketPurchase />
       <MusicLinks />
       <ClientMusic />

@@ -6,8 +6,10 @@ const Main = () => {
   return (
     <section id='home' className={styles.mainSection}>
       <div className={styles.videoContainer}>
-        <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
+        <video autoPlay loop muted playsInline preload="auto" className={styles.backgroundVideo}>
           <source src="/garo_video.mp4" type="video/mp4" />
+          <source src="/garo_video.webm" type="video/webm" />
+          <source src="/garo_video.ogv" type="video/ogv" />
           Ваш браузер не поддерживает видео.
         </video>
 
@@ -18,7 +20,7 @@ const Main = () => {
 
         <button
           onClick={() => scrollToElement('#music')}
-          className={styles.listenButton}>Слушайте</button>
+          className={styles.listenButton}><span>Слушайте</span></button>
       </div>
     </section>
   );

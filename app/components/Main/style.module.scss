@@ -47,30 +47,27 @@
 }
 
 .title {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 5rem;
   letter-spacing: 2px;
   margin-bottom: 1.2rem;
-  color: #ffaa33;
+  color: white;
   text-transform: capitalize;
   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .title:hover {
   transform: scale(1.03);
-  color: #ff8800;
+  color: rgb(231, 221, 221);
 }
 
 .subtitle {
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 1.9rem;
   opacity: 0.85;
   margin-bottom: 1.5rem;
-  color: #dcdcdc;
-  font-family: 'Roboto', sans-serif;
+  color: gray;
+
 }
 
 .listenButton {
@@ -79,15 +76,16 @@
   border: none;
   padding: 1rem 3rem;
   font-size: 1.2rem;
-  font-weight: 600;
   border-radius: 40px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
+
+
 
 .listenButton:hover {
   background: #ff7700;
@@ -131,10 +129,10 @@
     padding: 6rem 2rem;
   }
   .title {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .listenButton {
@@ -148,7 +146,7 @@
     padding: 5rem 1.5rem;
   }
   .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .subtitle {
     font-size: 1.3rem;

@@ -18,12 +18,9 @@
 
 .title {
   font-size: 3.5rem;
-  font-weight: 700;
-  color: #ffcc00; /* Более теплый оттенок жёлтого для лучшего контраста */
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: 'Poppins', sans-serif;
   transition: transform 0.3s ease;
 }
 
@@ -39,7 +36,6 @@
   color: #e0e0e0; /* Чуть более светлый цвет текста для лучшего контраста */
   max-width: 800px;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
 }
 
 .imageContainer {

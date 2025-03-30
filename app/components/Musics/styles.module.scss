@@ -13,7 +13,6 @@
 
 .heading {
   font-size: 2.5rem;
-  font-weight: bold;
   color: #ffae00;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -55,13 +54,15 @@
 }
 
 @media (max-width: 767px) {
+  .heading {
+    font-size: 1.6rem;
+  }
   .container_music {
     width: 90%;
-    height: 244px;
+    height: 344px;
   }
 }
 
-/* Добавим плавный фон при наведении */
 .container:hover {
   background-color: #1e1e1e;
 }

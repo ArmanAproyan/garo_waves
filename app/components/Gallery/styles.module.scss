@@ -1,0 +1,26 @@
+.imageList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 600px) {
+    .imageList {
+      grid-template-columns: 1fr;  
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 960px) {
+    .imageList {
+      grid-template-columns: repeat(2, 1fr);  
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .imageList {
+      grid-template-columns: repeat(3, 1fr);  
+    }
+  }
+  
