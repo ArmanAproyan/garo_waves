@@ -8,11 +8,10 @@ import ClientMusic from './components/ClientMusic'
 import MusicLinks from './components/MusicList/MusicLists'
 import Footer from './components/Footer'
 import MenuModale from './components/MenuModal'
-import Gallery from './components/Gallery'
 import { useState } from 'react'
 
 const Home = () => {
-  const [openMenu, setOpenMenu ] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const handleOpenMenue = () => {
     setOpenMenu(true)
@@ -25,14 +24,13 @@ const Home = () => {
 
   return (
     <div>
-      <Header openMenu={handleOpenMenue} closeMenu={handleCloseMenu} isOpen={openMenu}/>
+      <Header openMenu={handleOpenMenue} closeMenu={handleCloseMenu} isOpen={openMenu} />
       <Main />
       <About />
-      {/* <Gallery/> */}
       <TicketPurchase />
       <MusicLinks />
       <ClientMusic />
-      <MenuModale isOpen={openMenu} closeModal={handleCloseMenu}/>
+      <MenuModale isOpen={openMenu} closeModal={handleCloseMenu} />
       <Footer />
     </div>
   )
